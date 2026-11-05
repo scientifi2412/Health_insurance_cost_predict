@@ -99,7 +99,7 @@ def predict(input_dict):
     if input_dict['Age'] <= 25:
         prediction = model_young.predict(input_df)
     else:
-        prediction = model_rest.predict(input_df)
+        prediction = model_young.predict(input_df)
 
     return int(prediction[0])               
 
